@@ -3,7 +3,7 @@
     "path": "~/Documents/GitHub/Estadistica1/Journal.Rmd",
     "project_path": "Journal.Rmd",
     "type": "r_markdown",
-    "hash": "0",
+    "hash": "1282645038",
     "contents": "",
     "dirty": false,
     "created": 1628539549077.0,
@@ -12,16 +12,16 @@
     "properties": {
         "source_window_id": "",
         "Source": "Source",
-        "cursorPosition": "115,0",
-        "scrollLine": "110",
+        "cursorPosition": "155,0",
+        "scrollLine": "137",
         "last_setup_crc32": "E512F57Ed70cb7b9"
     },
     "folds": "",
-    "lastKnownWriteTime": 1628542182,
+    "lastKnownWriteTime": 1628543516,
     "encoding": "UTF-8",
     "collab_server": "",
     "source_window": "",
-    "last_content_update": 1628542182878,
+    "last_content_update": 1628543516866,
     "read_only": false,
     "read_only_alternatives": []
 }
