@@ -2,7 +2,7 @@ name: "Estadística para el Análisis Político 1"
 navbar:
   title: "Estadística para el Análisis Político 1"
   left:
-    - text: "Presentación"
+    - text: "Presentacion"
       href: index.html
     - text: "Clases"
       href: Journal.html
