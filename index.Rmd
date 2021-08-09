@@ -14,10 +14,13 @@ output: html_document
 
 </style>
 
-<div class="row" style="padding-top: 40px;">
+<div class="row" style="padding-top: 30px;">
 <div class="col-sm-6">
 
 # **Estadística para el Análisis Político 1**
+
+
+
 
 ## SUMILLA
 
