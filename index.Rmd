@@ -17,7 +17,7 @@ output: html_document
 <div class="row" style="padding-top: 30px;">
 <div class="col-sm-6">
 
-# **POL278 Estadística para el Análisis Político 1**
+# **Estadística para el Análisis Político 1**
 
 La ciencia política tiene como una de sus tareas el análisis de datos empíricos con el objetivo de analizar y comprender una realidad. Una herramienta científica para lograr este objetivo es la estadística. A través de ella se describe, se ponen a prueba hipótesis, y se modela la realidad social, económica y política de nuestro entorno. En ese sentido, este curso apoya no sólo el perfil académico del estudiante sino su perfil profesional, potenciando sus habilidades para el análisis político y social, y proporcionándole las bases cuantitativas para el desarrollo de su tesis de pregrado. 
 
