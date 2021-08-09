@@ -399,11 +399,68 @@ div.tocify {
 <p>2021 | 8 | 23 Last compiled: 2021-08-09</p>
 <p>En la sesión teórica sincrónica resolvimos las siguientes preguntas: ¿Qué es la estadística? ¿Por qué estadística en Ciencia Política y en Relaciones Internacionales?, Nociones básicas de muestreo, Medición, variables y niveles de medición.</p>
 <p>En esta sesión resolvimos un ejercicio práctico en R.</p>
-<div id="creación-de-objetos" class="section level3">
-<h3>Creación de objetos</h3>
-<pre class="r"><code>x=1+4
-x</code></pre>
-<pre><code>## [1] 5</code></pre>
+<div id="introducción-al-r" class="section level3">
+<h3>Introducción al R</h3>
+<div id="directorio-de-trabajo" class="section level4">
+<h4>Directorio de trabajo</h4>
+<p>El primer paso en R es definir el directorio de trabajo en su computadora.</p>
+<p>El comando <strong>getwd</strong> muestra el directorio de trabajo actual.</p>
+<pre class="r"><code>getwd() </code></pre>
+<pre><code>## [1] &quot;/Users/maryliacruz/Documents/GitHub/Estadistica1&quot;</code></pre>
+<p>El comando <strong>setwd</strong> sirve para señalar el directorio de trabajo. Entre los parentesis tengo que señalar el directorio de trabajo.Otra forma es elen</p>
+<pre class="r"><code>setwd(&quot;~/Documents/GitHub/Estadistica1&quot;)</code></pre>
+</div>
+<div id="r-como-calculadora" class="section level4">
+<h4>R como calculadora</h4>
+<p>Creo un objeto <strong>a</strong> que tiene el valor 10 y luego lo evelo al cuadrado.</p>
+<pre class="r"><code>a=10 
+a*2</code></pre>
+<pre><code>## [1] 20</code></pre>
+<p>Creo un objeto <strong>b</strong> que tiene el valor 64 y luego realizo la raíz cuadrada.</p>
+<pre class="r"><code>b=64
+sqrt(64) </code></pre>
+<pre><code>## [1] 8</code></pre>
+<p>Si deseo pedir ayuda para alguna determinada función</p>
+<pre class="r"><code>help.search(&quot;sqrt&quot;)
+?sqrt</code></pre>
+</div>
+</div>
+<div id="tipos-de-objetos-en-r" class="section level3">
+<h3>Tipos de objetos en R</h3>
+<ol style="list-style-type: decimal">
+<li>Vectores</li>
+</ol>
+<p>Se emplea “c()” significa concatenar, es decir, juntar los elementos de un vector.</p>
+<pre class="r"><code>#Vectores de factores
+nombres = c(&quot;juan&quot;,&quot;pedro&quot;,&quot;lucia&quot;,&quot;maria&quot;, &quot;paula&quot;)
+nombres</code></pre>
+<pre><code>## [1] &quot;juan&quot;  &quot;pedro&quot; &quot;lucia&quot; &quot;maria&quot; &quot;paula&quot;</code></pre>
+<pre class="r"><code>sexo = c(&quot;hombre&quot;,&quot;hombre&quot;,&quot;mujer&quot;,&quot;mujer&quot;, &quot;mujer&quot;)
+sexo</code></pre>
+<pre><code>## [1] &quot;hombre&quot; &quot;hombre&quot; &quot;mujer&quot;  &quot;mujer&quot;  &quot;mujer&quot;</code></pre>
+<pre class="r"><code>#Vectores numéricos
+edad= c(25,20,21,18,19)
+edad</code></pre>
+<pre><code>## [1] 25 20 21 18 19</code></pre>
+<pre class="r"><code>#Confirmar si el vector se creo
+is.vector(nombres)</code></pre>
+<pre><code>## [1] TRUE</code></pre>
+<ol start="2" style="list-style-type: decimal">
+<li>Data.frame (bases de datos donde las columnas son las variables y las filas son las observaciones).</li>
+</ol>
+<p>Se emplea la función <strong>data.frame</strong> y coloca los vectores creados.</p>
+<pre class="r"><code>data=data.frame(nombres,sexo,edad)
+data</code></pre>
+<pre><code>##   nombres   sexo edad
+## 1    juan hombre   25
+## 2   pedro hombre   20
+## 3   lucia  mujer   21
+## 4   maria  mujer   18
+## 5   paula  mujer   19</code></pre>
+<ol start="3" style="list-style-type: decimal">
+<li><p>Listas</p></li>
+<li><p>Matrices</p></li>
+</ol>
 </div>
 </div>
 <div id="clase-2" class="section level1">
@@ -425,7 +482,7 @@ x</code></pre>
 <p>So, let’s say you are learning how to make a histogram in R. For example, maybe you want to sample 100 numbers from a normal distribution with mean = 0, and standard deviation =1, and then you want to plot a histogram. You can do this right here by using an r code block, like this:</p>
 <pre class="r"><code>samples &lt;- rnorm(100, mean=0, sd=1)
 hist(samples)</code></pre>
-<p><img src="Journal_files/figure-html/unnamed-chunk-2-1.png" width="672" /></p>
+<p><img src="Journal_files/figure-html/unnamed-chunk-8-1.png" width="672" /></p>
 <p>When you knit this R Markdown document, you will see that the histogram is printed to the page, along with the R code. This document can be set up to hide the R code in the webpage, just delete the comment (hashtag), from the cold folding option in the yaml header up top. For purposes of letting yourself see the code, and me see the code, best to keep it the way that it is. You learn all of these things and more can be customized in each R code block.</p>
 </div>
 <div id="clase-5" class="section level1">

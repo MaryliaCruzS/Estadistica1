@@ -44,13 +44,88 @@ En la sesión teórica sincrónica resolvimos las siguientes preguntas: ¿Qué e
  
 En esta sesión resolvimos un ejercicio práctico en R.
 
-### Creación de objetos
+### Introducción al R
+
+#### Directorio de trabajo
+
+El primer paso en R es definir el directorio de trabajo en su computadora.
+
+El comando **getwd** muestra el directorio de trabajo actual.
+
+```{r}
+getwd() 
+```
+
+El comando **setwd** sirve para señalar el directorio de trabajo. Entre los parentesis tengo que señalar el directorio de trabajo.Otra forma es elen 
+
+```{r,eval=FALSE}
+setwd("~/Documents/GitHub/Estadistica1")
+```
+
+#### R como calculadora
+
+Creo un objeto **a**  que tiene el valor 10 y luego lo evelo al cuadrado.
 
 
 ```{r}
-x=1+4
-x
+a=10 
+a*2
+
 ```
+
+Creo un objeto **b**  que tiene el valor 64 y luego realizo la raíz cuadrada.
+
+```{r}
+b=64
+sqrt(64) 
+```
+
+Si deseo pedir ayuda para alguna determinada función 
+
+```{r}
+help.search("sqrt")
+?sqrt
+```
+
+
+
+
+### Tipos de objetos en R
+
+1. Vectores
+
+Se emplea "c()" significa concatenar, es decir, juntar los elementos de un vector.
+
+```{r}
+#Vectores de factores
+nombres = c("juan","pedro","lucia","maria", "paula")
+nombres
+sexo = c("hombre","hombre","mujer","mujer", "mujer")
+sexo
+#Vectores numéricos
+edad= c(25,20,21,18,19)
+edad
+#Confirmar si el vector se creo
+is.vector(nombres)
+```
+
+
+
+2. Data.frame (bases de datos donde las columnas son las variables y las filas son las observaciones). 
+
+
+Se emplea la función **data.frame** y coloca los vectores creados.
+
+```{r}
+data=data.frame(nombres,sexo,edad)
+data
+```
+
+
+3. Listas
+
+4. Matrices
+
 
 # Clase 2
 
